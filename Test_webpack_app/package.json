@@ -1,0 +1,28 @@
+{
+  "name": "test_webpack_app",
+  "version": "1.0.0",
+  "description": "no discr...))",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "webpack"
+  ],
+  "author": "Abrakadabra",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "ref-loader": "^1.0.3",
+    "style-loader": "^3.3.1",
+    "val-loader": "^4.0.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
