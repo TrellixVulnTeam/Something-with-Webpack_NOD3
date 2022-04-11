@@ -19,12 +19,20 @@ module.exports = {
             '@models': path.resolve(__dirname, 'src/models'),
         }
     },
+    devServer: {
+        port: 4200
+    },
     plugins: [
         new HTMLWebpackPlugin({
             template: "./index.html"
         }),
         new CleanWebpackPlugin()
     ],
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
+    },
     module: {
         rules: [
             {
