@@ -5,6 +5,7 @@ import xml from './assets/data';
 import csv from './assets/data2.csv';
 import GovnoLogo from './assets/clipart-snoopy';
 import './styles/styles.css';
+import './styles/style.scss';
 
 const post = new Post('Webpack post title', GovnoLogo)
 

@@ -14,7 +14,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
-        extensions: ['.js', '.json', '.png', '.jpg', '.jpeg', '.xml', 'css', 'scss'],
+        extensions: ['.js', '.json', '.png', '.jpg', '.jpeg', '.xml', 'css', 'scss', 'sass'],
         alias: {
             '@models': path.resolve(__dirname, 'src/models'),
         }
@@ -38,6 +38,17 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    "style-loader",
+                    // Translates CSS into CommonJS
+                    "css-loader",
+                    // Compiles Sass to CSS
+                    "sass-loader",
+                ],
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
