@@ -8,7 +8,7 @@ import './styles/styles.css';
 import './styles/style.scss';
 
 const post = new Post('Webpack post title', GovnoLogo)
-
+//что такое доброта
 console.log('Post to string', post.toString())
 
 console.log('JSON: ', json)
